@@ -3,13 +3,34 @@ html {
 }
 
 body {
+    padding: 0 10rem;
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.17;
+    letter-spacing: 3px;
     background: $primary;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    color: $secondary;
+    font-weight: 700;
+}
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+p,
 span {
     color: $text;
+}
+
+hr {
+    border: 1px solid $secondary;
+    width: 42%;
+    margin: 0;
 }

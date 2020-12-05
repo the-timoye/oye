@@ -1,8 +1,12 @@
 import React from 'react';
-import { Nav } from "../components";
+import { Nav, Header, SectionTitle } from "../components";
 
 export const Home = () => {
     return (
-        <Nav />
+        <>
+            <Nav />
+            <Header />
+            <SectionTitle title={"My Skills"} />
+        </>
     )
 }
