@@ -1,8 +1,13 @@
 @import "./abstracts/variables";
+@import "./abstracts/typography";
 
 @import "./base/base";
 @import "./base/fonts";
 
+@import "./components/section-title";
+
 @import "./layouts/header";
 @import "./layouts/nav";
-@import "./layouts/section-title";
+@import "./layouts/skills";
+
+@import "./pages/projects";

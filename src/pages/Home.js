@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Header, SectionTitle } from "../components";
+import { Nav, Header, SectionTitle, Skills, Projects } from "../components";
 
 export const Home = () => {
     return (
@@ -7,6 +7,10 @@ export const Home = () => {
             <Nav />
             <Header />
             <SectionTitle title={"My Skills"} />
+            <Skills />
+            <SectionTitle title={"Projects"} />
+            <Projects />
+            <SectionTitle title={"Hobbies"} />
         </>
     )
 }
