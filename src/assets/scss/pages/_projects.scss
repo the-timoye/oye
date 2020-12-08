@@ -1,16 +1,15 @@
 .project {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include display-flex(wrap, space-between);
     margin: 15rem auto;
-    &-thumbnail {
-        position: relative;
+    &-thumbnail,
+    &-overlay {
         width: 30rem;
         height: 30rem;
+    }
+    &-thumbnail {
+        position: relative;
         margin: 2rem 1rem;
-        cursor: pointer;
-
         img {
             width: 30rem;
             height: 30rem;
@@ -24,13 +23,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30rem;
-        height: 30rem;
         border-radius: 50%;
         cursor: pointer;
         background-color: #0000006b;
-        text-align: center;
-        color: $white;
-        font-weight: 700;
     }
 }

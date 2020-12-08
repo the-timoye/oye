@@ -6,7 +6,7 @@ export const Home = () => {
         <>
             <Nav />
             <Header />
-            <SectionTitle title={"My Skills"} />
+            <SectionTitle title={"About Me"} />
             <Skills />
             <SectionTitle title={"Projects"} />
             <Projects />
