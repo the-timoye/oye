@@ -4,7 +4,6 @@ import nodeIcon from "../assets/images/nodejs.png";
 import reactIcon from "../assets/images/reactjs.png";
 import sassIcon from "../assets/images/sass.png";
 import styledIcon from "../assets/images/styledComponent.png";
-import { SectionTitle } from "./SectionTitle";
 
 export const Skills = () => {
 
@@ -40,7 +39,7 @@ export const Skills = () => {
             <div className="">
                 {skills.map((skill, index) => {
                     return (
-                        <><img src={skill.icon} alt={skill.name} key={index} /></>
+                        <img src={skill.icon} alt={skill.name} key={index} />
                     );
                 })}
             </div>

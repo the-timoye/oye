@@ -16,3 +16,13 @@ hr {
     width: 42%;
     margin: 0;
 }
+
+a {
+    outline: none;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: initial;
+    }
+}

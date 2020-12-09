@@ -27,4 +27,22 @@
         cursor: pointer;
         background-color: #0000006b;
     }
+
+    &-details {
+        position: absolute;
+        top: 50%;
+        width: 50rem;
+        height: 30rem;
+        padding: 2rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        z-index: 2;
+        background-color: $secondary;
+        border-radius: 5px;
+
+        h4,
+        p {
+            color: $primary;
+        }
+    }
 }
