@@ -11,6 +11,7 @@ export const Projects = () => {
 
     useEffect(() => {
         setProjects([
+            { thumbnail: enaro, title: 'Enaro', description: '', tools: 'ReactJs,NodeJs', link: 'private' },
             { thumbnail: fesbach, title: 'FESBACH Schools', description: 'Fesbach Schools is a bla bla bla', tools: 'Wordpress', link: 'http://www.fesbachschools.com' },
             { thumbnail: enaro, title: 'Enaro', description: '', tools: 'ReactJs,NodeJs', link: 'private' },
             { thumbnail: aggsoga, title: 'AGGSOGA', description: '', tools: 'HTML, CSS, JQuery, Wordpress', link: 'https://aggsogaglobal.com' },
@@ -47,7 +48,6 @@ export const Projects = () => {
 
     return (
         <div className="project">
-            {console.log(showDetails)}
             {projects.map((project, index) => {
                 return (
                     <div className="project-thumbnail" key={index}>

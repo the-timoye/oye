@@ -1,0 +1,10 @@
+a.see-more {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+    color: $text;
+    &:hover {
+        color: text;
+        border-bottom: 1px solid $text;
+    }
+}

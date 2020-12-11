@@ -1,0 +1,30 @@
+@include keyframes(bounceInfinitely) {
+    0%,
+    100% {
+        transform: translateY(-3%);
+    }
+    50% {
+        transform: translateY(2%);
+    }
+}
+
+@include keyframes(stretchText) {
+    0%,
+    100% {
+        letter-spacing: 7px;
+    }
+    50% {
+        letter-spacing: 5px;
+    }
+}
+
+header.home {
+    .intro {
+        h2 {
+            @include animate(stretchText, 3s, infinite, normal, ease-out);
+        }
+    }
+    img {
+        @include animate(bounceInfinitely, 3s, infinite, normal, ease);
+    }
+}
