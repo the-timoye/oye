@@ -1,15 +1,17 @@
 @import "./abstracts/variables";
-@import "./abstracts/typography";
 @import "./abstracts/mixins";
+@import "./abstracts/animations";
 
 @import "./base/base";
 @import "./base/fonts";
+@import "./base/typography";
 
-@import "./components/section-title";
 @import "./components/button";
+@import "./components/link";
+@import "./components/section-title";
 
+@import "./layouts/footer";
 @import "./layouts/header";
 @import "./layouts/nav";
-@import "./layouts/skills";
 
-@import "./pages/projects";
+@import "./pages/home";
