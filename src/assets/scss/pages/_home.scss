@@ -2,14 +2,35 @@ div.project {
     position: relative;
     @include display-flex(wrap, center);
     margin: 15rem auto;
-    &-thumbnail,
-    &-overlay {
+
+    &-container {
         width: 30rem;
         height: 30rem;
+        perspective: 100rem;
+        margin: 2rem 1rem;
+        &__inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        &:hover &__inner {
+            transform: rotateY(180deg);
+        }
+    }
+    &-thumbnail,
+    &-details {
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        backface-visibility: hidden;
+        border-radius: 50%;
     }
     &-thumbnail {
-        position: relative;
-        margin: 2rem 1rem;
+        width: 100%;
+        height: 100%;
+
         img {
             width: 30rem;
             height: 30rem;
@@ -17,56 +38,53 @@ div.project {
             object-fit: cover;
         }
     }
-    &-overlay {
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        cursor: pointer;
-        background-color: #0000006b;
-    }
 
     &-details {
-        position: absolute;
-        top: 50%;
-        // left: -50%;
-        width: 50rem;
-        height: 30rem;
-        padding: 2rem;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        border-radius: 50%;
         background-color: $secondary;
-        border-radius: 5px;
-
-        h4,
-        p {
+        transform: rotateY(180deg);
+        text-align: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        p,
+        span {
             color: $primary;
         }
     }
 }
 
 div.about {
+    position: relative;
     margin: 15rem auto;
-    p {
+    max-width: 100%;
+    overflow: hidden;
+    p.about {
         width: 60%;
-        margin: 0 auto 15rem auto;
+        margin: 0 auto 25rem auto;
         text-align: center;
         line-height: 1.5;
     }
-    div {
-        white-space: nowrap;
-        max-width: 100%;
+    div.skills {
+        position: absolute;
+        bottom: 1rem;
+        margin-top: 8rem;
+        width: 200%;
         height: 7rem;
-        overflow: hidden;
-        margin: 0 auto;
+        white-space: nowrap;
         text-align: center;
+        animation: 20s linear 1s infinite running infiniteScroll;
         img {
+            display: inline;
+            transition: all 0.2s ease-out;
             position: relative;
-            width: 5rem;
-            margin-right: 10rem;
+            width: 2%;
+            margin-right: 3%;
         }
     }
 }
@@ -78,10 +96,39 @@ div.about {
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 10rem;
-        img {
-            height: 15rem;
-            margin-right: 1rem;
-            margin-bottom: 1rem;
+        &__photos {
+            position: relative;
+            a {
+                margin-top: 35rem;
+            }
+            img {
+                position: absolute;
+                width: 25rem;
+                height: 25rem;
+                object-fit: cover;
+                border-radius: 50%;
+                cursor: zoom-out;
+                cursor: -webkit-zoom-out;
+                cursor: -moz-zoom-out;
+                transition: all 0.5s ease-out;
+
+                &:nth-child(2) {
+                    left: 20rem;
+                }
+                &:nth-child(3) {
+                    left: -2rem;
+                }
+
+                &:nth-child(4) {
+                    top: 15rem;
+                    left: 10rem;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    z-index: 6;
+                }
+            }
         }
     }
     &__books {
@@ -90,5 +137,13 @@ div.about {
         padding: 1rem;
         border: 1px solid #000000;
         box-shadow: 1px 1px 5px 1px #000000b4;
+        cursor: zoom-out;
+        cursor: -webkit-zoom-out;
+        cursor: -moz-zoom-out;
+        transition: all 0.5s ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

@@ -15,16 +15,31 @@ export const Skills = () => {
     useEffect(() => {
         setState({
             skills: [
+
+                { icon: mongoIcon, name: "firebase" },
                 { icon: reactIcon, name: "React Js" },
                 { icon: sassIcon, name: "Sass" },
-                { icon: styledIcon, name: "Styled Components" },
                 { icon: nodeIcon, name: "Node Js" },
-                { icon: mongoIcon, name: "Mongo DB" },
+
+                { icon: mongoIcon, name: "firebase" },
                 { icon: reactIcon, name: "React Js" },
                 { icon: sassIcon, name: "Sass" },
-                { icon: styledIcon, name: "Styled Components" },
                 { icon: nodeIcon, name: "Node Js" },
-                { icon: mongoIcon, name: "Mongo DB" },
+
+                { icon: mongoIcon, name: "firebase" },
+                { icon: reactIcon, name: "React Js" },
+                { icon: sassIcon, name: "Sass" },
+                { icon: nodeIcon, name: "Node Js" },
+
+                { icon: mongoIcon, name: "firebase" },
+                { icon: reactIcon, name: "React Js" },
+                { icon: sassIcon, name: "Sass" },
+                { icon: nodeIcon, name: "Node Js" },
+
+                { icon: mongoIcon, name: "firebase" },
+                { icon: reactIcon, name: "React Js" },
+                { icon: sassIcon, name: "Sass" },
+                { icon: nodeIcon, name: "Node Js" },
             ]
         })
     }, []);
@@ -32,11 +47,11 @@ export const Skills = () => {
     const { skills } = state;
     return (
         <div className="about">
-            <p>
+            <p className='about'>
                 I’m a Software Developer with deep love for code, and everything there is to learn about development. I’m a Software Developer with deep love for code, and everything there is to learn about development. I’m a Software Developer with deep love for code, and everything there is to learn about development
             </p>
 
-            <div className="">
+            <div className="skills">
                 {skills.map((skill, index) => {
                     return (
                         <img src={skill.icon} alt={skill.name} key={index} />

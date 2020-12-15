@@ -11,10 +11,10 @@ h2 {
     margin-bottom: 1rem;
 }
 
-hr {
-    border: 1px solid $secondary;
+hr.section-title__hr {
     width: 42%;
     margin: 0;
+    border: 1px solid $secondary;
 }
 
 a {
