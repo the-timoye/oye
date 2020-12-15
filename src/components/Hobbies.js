@@ -13,7 +13,7 @@ export const Hobbies = () => {
         setState((prev) => ({
             ...prev,
             books: [{ title: 'The Best Laid Plans', author: 'S. Sheldon' }, { title: 'Piercing the Darkness', author: 'F. Peretti' }, { title: 'Throne of Glass Series', author: 'S. J. Mass' }, { title: 'The DaVinci Code', author: 'D. Brown' }],
-            pictures: [{ source: bondhair, title: 'one' }, { source: fesbach, title: 'two' }]
+            pictures: [{ source: fesbach, title: 'two' }, { source: bondhair, title: 'one' }, { source: fesbach, title: 'two' }]
         }));
     }, []);
 
@@ -32,7 +32,7 @@ export const Hobbies = () => {
                         )
                     })}
                 </div>
-                <div>
+                <div className='hobbies-content__photos'>
                     <p className='mb-5'> Some Images I shot (from my love for art) </p>
                     {state.pictures && state.pictures.map((picture, index) => {
                         return (
@@ -40,7 +40,10 @@ export const Hobbies = () => {
                         )
                     })}
                     <br />
-                    <a className='see-more' href='/' target='_blank' rel='noreferrer'>see more &rarr; </a>
+                    <a className='link __light float-right' href='https://www.instagram.com/thetimoye' target='_blank' rel='noreferrer'>see more &rarr;
+                    <hr className="link__hr __light" />
+                    </a>
+
                 </div>
             </div>
         </div>

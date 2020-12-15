@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import headerImg from "../assets/images/header.png";
 import IG from "../assets/images/instagram.png";
 import gitHub from "../assets/images/github.png";
 import relpIt from "../assets/images/replit.png";
+import { typingAnimation } from "../utility/helpers";
 
 export const Header = () => {
     const [state, setState] = useState({
+        introTexts: ["Hi, I'm Timi, aka thetimoye", "I'm a fullstack dev"],
+        intro: '',
+        delay: 2000,
         bannerSrc: headerImg,
         mainIntro: "Hi, I'm Timi",
         subIntro: 'I’m a Software Developer with deep love for code, and everything there is to know about Software Development and Data Engineering',
@@ -16,12 +20,20 @@ export const Header = () => {
         ]
     });
 
-    const { bannerSrc, mainIntro, subIntro, socialHandles } = state;
+
+    const { bannerSrc, intro, subIntro, socialHandles } = state;
+
+    useEffect(() => {
+        if (state.introTexts.length > 0) {
+            typingAnimation(setState, state.introTexts, state.delay);
+
+        }
+    }, [state.introTexts, state.delay]);
 
     return (
         <header className="home">
             <div className="intro">
-                <h2> {mainIntro} </h2>
+                <h2 className={state.intro === '' ? 'mb-5' : ''} > {state.intro} </h2>
                 <p> {subIntro} </p>
                 <>
                     {socialHandles.map(handle => {
