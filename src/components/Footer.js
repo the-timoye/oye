@@ -6,7 +6,7 @@ export const Footer = () => {
 
         <footer className="footer">
             <span>Copyright &#169; 2020</span>
-            <span>Designed and Developed by <a href="/"> thetimoye </a> &#9825;</span>
+            <span>Designed and Developed by <a href="/" className='link __light'> thetimoye <hr className="link__hr __light" /></a> &#9825;</span>
             <img src={chatIcon} alt='chat' />
         </footer>
 
