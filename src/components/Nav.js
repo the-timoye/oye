@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logoImg from "../assets/images/logo.png";
 import file from "../assets/images/file.png";
 import mail from "../assets/images/mail.png";
+import resume from "../assets/images/portfolio/Oluyinka Oluwatimilehin.pdf";
 
 export const Nav = () => {
     const [state, setState] = useState({
@@ -22,7 +23,7 @@ export const Nav = () => {
             <img src={logo.src} alt={logo.alt} className="logo" />
 
             <div>
-                <a href="/" onClick={downloadResume}><img src={resumeImg.src} alt={resumeImg.alt} /></a>
+                <a href={resume} target="_blank" rel="noreferrer" onClick={downloadResume}><img src={resumeImg.src} alt={resumeImg.alt} /></a>
                 <a href={`mailto:${emailAddress}`}><img src={mailImg.src} alt={mailImg.alt} /></a>
             </div>
         </nav>

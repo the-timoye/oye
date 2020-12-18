@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import bondhair from '../assets/images/portfolio/bondhair.png';
-import fesbach from '../assets/images/portfolio/fesbach.png'
+import nTheatre from '../assets/images/national-theatre.jpg';
+import cowsImage from '../assets/images/cowsthem.jpg';
+import GRA from '../assets/images/gra.jpg';
 
 export const Hobbies = () => {
     const [state, setState] = useState({
@@ -13,7 +14,7 @@ export const Hobbies = () => {
         setState((prev) => ({
             ...prev,
             books: [{ title: 'The Best Laid Plans', author: 'S. Sheldon' }, { title: 'Piercing the Darkness', author: 'F. Peretti' }, { title: 'Throne of Glass Series', author: 'S. J. Mass' }, { title: 'The DaVinci Code', author: 'D. Brown' }],
-            pictures: [{ source: fesbach, title: 'two' }, { source: bondhair, title: 'one' }, { source: fesbach, title: 'two' }]
+            pictures: [{ source: GRA, title: 'thetimoyes-image-gra' }, { source: nTheatre, title: 'thetimoyes-image-theatre' }, { source: cowsImage, title: 'thetimoyes-image-cows' }]
         }));
     }, []);
 

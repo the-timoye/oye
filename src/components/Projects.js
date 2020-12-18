@@ -3,6 +3,7 @@ import fesbach from "../assets/images/portfolio/fesbach.png";
 import aggsoga from "../assets/images/portfolio/aggsoga.png";
 import bondhair from "../assets/images/portfolio/bondhair.png";
 import enaro from "../assets/images/portfolio/enaro.png";
+import indigo from "../assets/images/indigo.png";
 
 export const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -11,7 +12,7 @@ export const Projects = () => {
         setProjects([
             { thumbnail: enaro, title: 'Enaro', description: 'Collaborating with other devs, I built the "Buy Units" section of the Enaro Web-app - an app that manages estate users meters.', tools: 'ReactJs,NodeJs', link: 'private' },
             { thumbnail: fesbach, title: 'FESBACH Schools', description: 'A website for a Nigerian Secondary School providing a glimpse of the school to prospective students.', tools: 'Wordpress', link: 'http://www.fesbachschools.com' },
-            { thumbnail: enaro, title: 'Indigo', description: 'Built the doctors scheduling/calender, and tele-conferencing sections in the Indigo EMR.', tools: 'Laravel, JQuery', link: 'private' },
+            { thumbnail: indigo, title: 'Indigo', description: 'Built the doctors scheduling/calender, and tele-conferencing sections in the Indigo EMR.', tools: 'Laravel, JQuery', link: 'https://indigo.summitech.ng' },
             { thumbnail: aggsoga, title: 'AGGSOGA', description: 'A custom-themed website for an Old Girls` association.', tools: 'HTML, CSS, JQuery, Wordpress', link: 'https://aggsogaglobal.com' },
             { thumbnail: bondhair, title: 'The Bond Hair', description: 'An e-commerce deals with the sales of hair extensions.', tools: 'Wordpress', link: 'https://www.thebondhair.com' },
         ])
