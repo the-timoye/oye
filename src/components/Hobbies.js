@@ -22,11 +22,11 @@ export const Hobbies = () => {
         <div className="hobbies">
             <p className='my-5 text-center'> {state.intro} </p>
             <div className='hobbies-content'>
-                <div className='w-50'>
+                <div className='hobbies-content__books'>
                     <p className='mb-5'> Some of my favorite books are: </p>
                     {state.books && state.books.map((book, index) => {
                         return (
-                            <div className='hobbies__books my-3 w-75'>
+                            <div className='hobbies__books my-3'>
                                 <span className='w-75' key={index}> {book.title} </span>
                                 <span className='' key={index}> {book.author} </span>
                             </div>

@@ -38,12 +38,12 @@ export const Header = () => {
                 <>
                     {socialHandles.map(handle => {
                         return (
-                            <a href={handle.url} target="_blank" rel="noreferrer" key={handle.name}> <img src={handle.image} alt={handle.name} /> </a>
+                            <a href={handle.url} target="_blank" rel="noreferrer" key={handle.name}> <img className='socials' src={handle.image} alt={handle.name} /> </a>
                         )
                     })}
                 </>
             </div>
-            <img src={bannerSrc} alt="home-header" />
+            <img src={bannerSrc} alt="home-header" className='banner' />
         </header>
     )
 }

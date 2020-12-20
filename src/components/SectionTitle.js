@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types"
-import ScrollAnimation from 'react-animate-on-scroll';
 
 export const SectionTitle = ({ title }) => {
     return (

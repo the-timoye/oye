@@ -6,6 +6,11 @@ footer.footer {
     padding: 2rem 0;
     margin-top: 5rem;
 
+    @include breakpoint(phone) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     img {
         width: 3rem;
         cursor: pointer;

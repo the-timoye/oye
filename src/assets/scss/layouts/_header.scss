@@ -7,11 +7,45 @@ header.home {
     .intro {
         width: 30%;
         line-height: 1.5;
-        img {
+
+        @include breakpoint(tab_landscape) {
+            width: 45%;
+        }
+
+        @include breakpoint(tab_portrait) {
+            width: 40%;
+        }
+
+        @include breakpoint(phone) {
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+        img.socials {
             height: 3rem;
+
+            @include breakpoint(tab_portrait) {
+                height: 2.5rem;
+            }
         }
     }
-    img {
+    img.banner {
         height: 85%;
+
+        @include breakpoint(tab_landscape) {
+            height: 40%;
+        }
+
+        @include breakpoint(tab_portrait) {
+            width: 40rem;
+        }
+
+        @include breakpoint(phone) {
+            height: 30rem;
+        }
+    }
+
+    @include breakpoint(phone) {
+        height: auto;
+        margin: 15rem 0;
     }
 }

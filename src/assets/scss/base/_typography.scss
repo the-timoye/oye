@@ -9,7 +9,6 @@ h4 {
 p,
 span {
     color: $text;
-    // line-height: 1.5;
 }
 body {
     font-family: "Montserrat", sans-serif;
@@ -17,6 +16,18 @@ body {
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 3px;
+
+    @include breakpoint(tab_landscape) {
+        font-size: 1.3rem;
+    }
+
+    @include breakpoint(tab_portrait) {
+        font-size: 1.2rem;
+    }
+
+    @include breakpoint(phone) {
+        font-size: 1.2rem;
+    }
 }
 
 .project-overlay {

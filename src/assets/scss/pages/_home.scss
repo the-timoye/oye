@@ -50,8 +50,7 @@ div.project {
         background-color: $secondary;
         transform: rotateY(180deg);
         text-align: center;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        overflow: hidden;
         p,
         span {
             color: $primary;
@@ -60,31 +59,40 @@ div.project {
 }
 
 div.about {
-    position: relative;
     margin: 15rem auto;
     max-width: 100%;
     overflow: hidden;
+
     p.about {
         width: 60%;
-        margin: 0 auto 25rem auto;
+        margin: 0 auto 15rem auto;
         text-align: center;
         line-height: 1.5;
+
+        @include breakpoint(tab_landscape) {
+            width: 75%;
+        }
+
+        @include breakpoint(tab_portrait) {
+            width: 80%;
+        }
+
+        @include breakpoint(phone) {
+            width: 100%;
+        }
     }
-    div.skills {
-        position: absolute;
-        bottom: 1rem;
-        margin-top: 8rem;
-        width: 200%;
-        height: 7rem;
-        white-space: nowrap;
+    p.skills {
+        @include cards-list;
+        width: 25rem;
         text-align: center;
-        animation: 20s linear 1s infinite running infiniteScroll;
+        transition: all 0.5s ease-out;
+
         img {
-            display: inline;
-            transition: all 0.2s ease-out;
-            position: relative;
-            width: 2%;
-            margin-right: 3%;
+            width: 2rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }
@@ -96,8 +104,35 @@ div.about {
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 10rem;
+
+        @include breakpoint(tab_portrait) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include breakpoint(phone) {
+            flex-direction: column;
+        }
+
+        &__books {
+            width: 50%;
+
+            P {
+                text-align: center;
+            }
+
+            @include breakpoint(tab_portrait) {
+                width: 100%;
+                margin-bottom: 8rem;
+            }
+        }
+
         &__photos {
             position: relative;
+            @include breakpoint(phone) {
+                margin: 0 auto;
+            }
             a {
                 margin-top: 35rem;
             }
@@ -107,9 +142,7 @@ div.about {
                 height: 25rem;
                 object-fit: cover;
                 border-radius: 50%;
-                cursor: zoom-out;
-                cursor: -webkit-zoom-out;
-                cursor: -moz-zoom-out;
+                @include cursor(zoom-out);
                 transition: all 0.5s ease-out;
 
                 &:nth-child(2) {
@@ -134,13 +167,13 @@ div.about {
     &__books {
         display: flex;
         justify-content: space-between;
-        padding: 1rem;
-        border: 1px solid #000000;
-        box-shadow: 1px 1px 5px 1px #000000b4;
-        cursor: zoom-out;
-        cursor: -webkit-zoom-out;
-        cursor: -moz-zoom-out;
+        width: 100%;
+        @include cards-list;
         transition: all 0.5s ease-out;
+
+        @include breakpoint(phone) {
+            width: 100%;
+        }
 
         &:hover {
             transform: scale(1.1);
