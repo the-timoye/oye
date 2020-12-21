@@ -29,7 +29,7 @@ header.home {
         }
     }
     img.banner {
-        height: 85%;
+        height: 80%;
 
         @include breakpoint(tab_landscape) {
             height: 40%;
