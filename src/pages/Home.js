@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Header, SectionTitle, Skills, Projects, Hobbies, Footer } from "../components";
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
             <Nav />
@@ -16,3 +16,5 @@ export const Home = () => {
         </>
     )
 }
+
+export default Home;

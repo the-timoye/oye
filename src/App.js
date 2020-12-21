@@ -1,12 +1,22 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from "./pages";
+import { Loader } from "./components/Loader";
+// import { Home } from "./pages";
+
+const Home = lazy(() => import('./pages/Home'));
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route
+          exact
+          path="/"
+          render={routeProps => (
+            <Suspense fallback={<Loader show />}>
+              <Home {...routeProps} />
+            </Suspense>
+          )} />
       </Switch>
     </Router>
   );
