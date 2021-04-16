@@ -1,0 +1,99 @@
+@include keyframes(bounceInfinitely) {
+    0%,
+    100% {
+        transform: translateY(-3%);
+    }
+    50% {
+        transform: translateY(2%);
+    }
+}
+
+@include keyframes(stretchText) {
+    0%,
+    100% {
+        letter-spacing: 7px;
+    }
+    50% {
+        letter-spacing: 5px;
+    }
+}
+
+@include keyframes(lds-ripple) {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+
+@include keyframes(slideIn) {
+    0% {
+        width: 1%;
+    }
+    100% {
+        width: 42%;
+    }
+}
+
+@include keyframes(infiniteScroll) {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@include keyframes(dropOut) {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 30rem;
+    }
+}
+
+@include keyframes(underlineBorder) {
+    0% {
+        transform: skewY(15deg);
+    }
+    50% {
+        transform: skewY(-15deg);
+    }
+    100% {
+        transform: skew(0);
+    }
+}
+header.home {
+    img {
+        @include animate(bounceInfinitely, 3s, infinite, normal, ease);
+    }
+}
+
+hr.section-title__hr {
+    @include animate(slideIn, 0.5s, 1, normal, ease-in);
+}
+
+div.project {
+    &-overlay {
+    }
+
+    &-details {
+        @include animate(dropOut, 0.2s, 1, normal, ease-out);
+    }
+}
+
+a.link {
+    &:hover hr.link__hr {
+        @include animate(underlineBorder, 0.5s, 1, normal, ease);
+    }
+}

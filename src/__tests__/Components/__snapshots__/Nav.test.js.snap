@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Bar Tests renders correctly 1`] = `
+<nav>
+  <img
+    alt="logo"
+    className="logo"
+    src="logo.png"
+  />
+  <div>
+    <a
+      href="Oluyinka Oluwatimilehin.pdf"
+      onClick={[Function]}
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="file"
+        src="file.png"
+      />
+    </a>
+    <a
+      href="mailto:thetimoye@gmail.com"
+    >
+      <img
+        alt="mail"
+        src="mail.png"
+      />
+    </a>
+  </div>
+</nav>
+`;

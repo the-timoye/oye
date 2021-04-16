@@ -1,0 +1,25 @@
+a.link {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+
+    hr.link__hr {
+        margin-top: 0.5rem;
+        border: 0;
+        height: 1px;
+
+        &.__light {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $text, rgba(0, 0, 0, 0));
+        }
+        &.__dark {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $primary, rgba(0, 0, 0, 0));
+        }
+    }
+
+    &.__light {
+        color: $text;
+    }
+    &.__dark {
+        color: $primary;
+    }
+}

@@ -1,0 +1,55 @@
+html {
+    font-size: 62.5%;
+
+    // @include breakpoint()
+
+    @include breakpoint(tab_landscape) {
+        font-size: 48%;
+    }
+
+    @include breakpoint(tab_portrait) {
+        font-size: 47.5%;
+    }
+
+    @include breakpoint(phone) {
+        font-size: 45%;
+    }
+}
+
+body {
+    padding: 0 10rem;
+    background: $primary;
+
+    @include breakpoint(tab_landscape) {
+        padding: 0 5rem;
+    }
+
+    @include breakpoint(phone) {
+        padding: 0 2rem;
+    }
+}
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+hr.section-title__hr {
+    width: 42%;
+    margin: 0;
+    border: 1px solid $secondary;
+
+    @include breakpoint(phone) {
+        width: 30%;
+    }
+}
+
+a {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: initial;
+    }
+}

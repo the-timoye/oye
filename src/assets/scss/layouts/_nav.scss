@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    img {
+        height: 3rem;
+    }
+
+    div {
+        & :not(:last-child) {
+            margin-right: 1rem;
+        }
+        a {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,182 @@
+div.project {
+    position: relative;
+    @include display-flex(wrap, center);
+    margin: 15rem auto;
+
+    &-container {
+        width: 30rem;
+        height: 30rem;
+        perspective: 100rem;
+        margin: 2rem 1rem;
+        &__inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        &:hover &__inner {
+            transform: rotateY(180deg);
+        }
+    }
+    &-thumbnail,
+    &-details {
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        backface-visibility: hidden;
+        border-radius: 50%;
+    }
+    &-thumbnail {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 30rem;
+            height: 30rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    &-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: $secondary;
+        transform: rotateY(180deg);
+        text-align: center;
+        overflow: hidden;
+        p,
+        span {
+            color: $primary;
+        }
+    }
+}
+
+div.about {
+    margin: 15rem auto;
+    max-width: 100%;
+    overflow: hidden;
+
+    p.about {
+        width: 60%;
+        margin: 0 auto 15rem auto;
+        text-align: center;
+        line-height: 1.5;
+
+        @include breakpoint(tab_landscape) {
+            width: 75%;
+        }
+
+        @include breakpoint(tab_portrait) {
+            width: 80%;
+        }
+
+        @include breakpoint(phone) {
+            width: 100%;
+        }
+    }
+    p.skills {
+        @include cards-list;
+        width: 25rem;
+        text-align: center;
+        transition: all 0.5s ease-out;
+
+        img {
+            width: 2rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.hobbies {
+    padding: 15rem 0;
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10rem;
+
+        @include breakpoint(tab_portrait) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include breakpoint(phone) {
+            flex-direction: column;
+        }
+
+        &__books {
+            width: 50%;
+
+            P {
+                text-align: center;
+            }
+
+            @include breakpoint(tab_portrait) {
+                width: 100%;
+                margin-bottom: 8rem;
+            }
+        }
+
+        &__photos {
+            position: relative;
+            @include breakpoint(phone) {
+                margin: 0 auto;
+            }
+            a {
+                margin-top: 35rem;
+            }
+            img {
+                position: absolute;
+                width: 25rem;
+                height: 25rem;
+                object-fit: cover;
+                border-radius: 50%;
+                @include cursor(zoom-out);
+                transition: all 0.5s ease-out;
+
+                &:nth-child(2) {
+                    left: 20rem;
+                }
+                &:nth-child(3) {
+                    left: -2rem;
+                }
+
+                &:nth-child(4) {
+                    top: 15rem;
+                    left: 10rem;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    z-index: 6;
+                }
+            }
+        }
+    }
+    &__books {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include cards-list;
+        transition: all 0.5s ease-out;
+
+        @include breakpoint(phone) {
+            width: 100%;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

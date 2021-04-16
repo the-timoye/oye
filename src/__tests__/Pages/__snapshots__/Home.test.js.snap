@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page tests renders correctly 1`] = `
+Array [
+  <nav>
+    <img
+      alt="logo"
+      className="logo"
+      src="logo.png"
+    />
+    <div>
+      <a
+        href="Oluyinka Oluwatimilehin.pdf"
+        onClick={[Function]}
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="file"
+          src="file.png"
+        />
+      </a>
+      <a
+        href="mailto:thetimoye@gmail.com"
+      >
+        <img
+          alt="mail"
+          src="mail.png"
+        />
+      </a>
+    </div>
+  </nav>,
+  <header
+    className="home"
+  >
+    <div
+      className="intro"
+    >
+      <h2
+        className="mb-5"
+      >
+         
+        
+         
+      </h2>
+      <p>
+         
+        I’m a Software Developer with deep love for code, and everything there is to know about Software Development and Data Engineering
+         
+      </p>
+      <a
+        href="https://github.com/the-timoye"
+        rel="noreferrer"
+        target="_blank"
+      >
+         
+        <img
+          alt="Git Hub"
+          className="socials"
+          src="github.png"
+        />
+         
+      </a>
+      <a
+        href="https://instagram.com/thetimoye"
+        rel="noreferrer"
+        target="_blank"
+      >
+         
+        <img
+          alt="Instagram"
+          className="socials"
+          src="instagram.png"
+        />
+         
+      </a>
+      <a
+        href="https://repl.it/@thetimoye"
+        rel="noreferrer"
+        target="_blank"
+      >
+         
+        <img
+          alt="Repl It"
+          className="socials"
+          src="replit.png"
+        />
+         
+      </a>
+    </div>
+    <img
+      alt="home-header"
+      className="banner"
+      src="header.png"
+    />
+  </header>,
+  <div
+    className="section-title"
+  >
+    <hr
+      className="section-title__hr"
+    />
+    <h3>
+       
+      About Me
+       
+    </h3>
+    <hr
+      className="section-title__hr"
+    />
+  </div>,
+  <div
+    className="about"
+  >
+    <p
+      className="about"
+    >
+      I began software development with the normal basics HTML and CSS shortly after graduation, before "Nigeria called". Soon after service, I worked 14months in a tech company as a System's Administrator, and alongside took part in Andela's #ALCWithUdacity2017 scholarship program, and brushed up my Javascript skills. I'm currently a full stack dev in Summitech Computing Ltd. See below my prowess so far:
+    </p>
+    <div
+      className="d-flex flex-wrap justify-content-around"
+    />
+  </div>,
+  <div
+    className="section-title"
+  >
+    <hr
+      className="section-title__hr"
+    />
+    <h3>
+       
+      Projects
+       
+    </h3>
+    <hr
+      className="section-title__hr"
+    />
+  </div>,
+  <div
+    className="project"
+  />,
+  <div
+    className="section-title"
+  >
+    <hr
+      className="section-title__hr"
+    />
+    <h3>
+       
+      Hobbies
+       
+    </h3>
+    <hr
+      className="section-title__hr"
+    />
+  </div>,
+  <div
+    className="hobbies"
+  >
+    <p
+      className="my-5 text-center"
+    >
+       
+      Asides Software development, enjoy reading novels (Christian, History and Science fictions), photography (for my love for nature) & browsing through art works
+       
+    </p>
+    <div
+      className="hobbies-content"
+    >
+      <div
+        className="hobbies-content__books"
+      >
+        <p
+          className="mb-5"
+        >
+           Some of my favorite books are: 
+        </p>
+      </div>
+      <div
+        className="hobbies-content__photos"
+      >
+        <p
+          className="mb-5"
+        >
+           Some Images I shot (from my love for art) 
+        </p>
+        <br />
+        <a
+          className="link __light float-right"
+          href="https://www.instagram.com/thetimoye"
+          rel="noreferrer"
+          target="_blank"
+        >
+          see more →
+          <hr
+            className="link__hr __light"
+          />
+        </a>
+      </div>
+    </div>
+  </div>,
+  <footer
+    className="footer"
+  >
+    <span>
+      Copyright © 2020
+    </span>
+    <span>
+      Designed and Developed by 
+      <a
+        className="link __light"
+        href="/"
+      >
+         thetimoye 
+        <hr
+          className="link__hr __light"
+        />
+      </a>
+       ♡
+    </span>
+    <img
+      alt="chat"
+      src="chat.png"
+    />
+  </footer>,
+]
+`;
