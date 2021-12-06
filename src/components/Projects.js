@@ -5,12 +5,14 @@ import bondhair from "../assets/images/portfolio/bondhair.png";
 import enaro from "../assets/images/portfolio/enaro.png";
 import indigo from "../assets/images/indigo.png";
 import milola from "../assets/images/milola.png";
+import indigoWebsite from "../assets/images/portfolio/indigo.png";
 
 export const Projects = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
         setProjects([
+            { thumbnail: indigoWebsite, title: 'Indigo Website', description: 'A website that describes the Indigo application and allows users subscribe to the app', tools: 'ReactJs, SCSS', link: 'https://sales.indigoemr.com' },
             { thumbnail: milola, title: 'Milola', description: 'A simple website/portfolio', tools: 'ReactJs, SCSS', link: 'https://milola.netlify.app' },
             { thumbnail: enaro, title: 'Enaro', description: 'Collaborating with other devs, I built the "Buy Units" section of the Enaro Web-app - an app that manages estate users meters.', tools: 'ReactJs,NodeJs', link: 'private' },
             { thumbnail: fesbach, title: 'FESBACH Schools', description: 'A website for a Nigerian Secondary School providing a glimpse of the school to prospective students.', tools: 'Wordpress', link: 'http://www.fesbachschools.com' },
