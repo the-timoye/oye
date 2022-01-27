@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import headerImg from "../assets/images/header.png";
 import IG from "../assets/images/instagram.png";
 import gitHub from "../assets/images/github.png";
-import relpIt from "../assets/images/replit.png";
+import book from "../assets/images/book.svg";
 import { typingAnimation } from "../utility/helpers";
 
 export const Header = () => {
@@ -12,15 +12,17 @@ export const Header = () => {
         delay: 2000,
         bannerSrc: headerImg,
         mainIntro: "Hi, I'm Timi",
-        subIntro: 'I’m a Software Developer with deep love for code, and everything there is to know about Software Development and Data Engineering',
+        subIntro: `Welcome to my space. Scroll to know more about me. 
+        If you love this website, my projects, pictures, or just want to do some good, feel free to buy me a book :)`,
         socialHandles: [
             { image: gitHub, url: 'https://github.com/the-timoye', name: 'Git Hub' },
             { image: IG, url: 'https://instagram.com/thetimoye', name: 'Instagram' },
-            { image: relpIt, url: 'https://repl.it/@thetimoye', name: 'Repl It' }
+            { image: book, url: 'https://buymeacoffee.com/thetimoye', name: 'Buy Me A Book' }
         ]
     });
 
 
+    // eslint-disable-next-line no-unused-vars
     const { bannerSrc, intro, subIntro, socialHandles } = state;
 
     useEffect(() => {

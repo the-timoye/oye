@@ -13,7 +13,11 @@ export const Hobbies = () => {
     useEffect(() => {
         setState((prev) => ({
             ...prev,
-            books: [{ title: 'The Best Laid Plans', author: 'S. Sheldon' }, { title: 'Piercing the Darkness', author: 'F. Peretti' }, { title: 'Throne of Glass Series', author: 'S. J. Mass' }, { title: 'The DaVinci Code', author: 'D. Brown' }],
+            books: [
+                { title: 'If Tomorrow comes', author: 'S. Sheldon' },
+                { title: 'Eyes Wide Open', author: 'T. Dekker' },
+                { title: 'Throne of Glass Series', author: 'S. J. Mass' },
+                { title: 'The Best Laid Plans', author: 'F. Peretti' }],
             pictures: [{ source: GRA, title: 'thetimoyes-image-gra' }, { source: nTheatre, title: 'thetimoyes-image-theatre' }, { source: cowsImage, title: 'thetimoyes-image-cows' }]
         }));
     }, []);
@@ -42,7 +46,7 @@ export const Hobbies = () => {
                     })}
                     <br />
                     <a className='link __light float-right' href='https://www.instagram.com/thetimoye' target='_blank' rel='noreferrer'>see more &rarr;
-                    <hr className="link__hr __light" />
+                        <hr className="link__hr __light" />
                     </a>
 
                 </div>
