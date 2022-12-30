@@ -1,0 +1,122 @@
+.home {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    .side_deco {
+        width: 40%;
+        height: 100vh;
+        background-color: $green;
+    }
+    &__profile{
+        &-card {
+            position: absolute;
+            top: 20%;
+            left: 25%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 2rem;
+            height: 50rem;
+            width: 40rem;
+            background-color: $beige;
+            
+
+            box-shadow: 1px 1px 5px 1px #00000021;
+
+            @include breakpoint(desktop) {
+                top: 23%;
+                left: 15%;
+                height: 55rem;
+                width: 43rem;
+            }
+
+            
+            @include breakpoint(laptop) {
+                top: 15%;
+                height: 45rem;
+                width: 35rem;
+            }
+                        
+            @include breakpoint(phone) {
+                position: relative;
+                width: 60rem;
+            }
+
+            &__avatar {
+                width: 20rem;
+                height: 20rem;
+                border-radius: 50%;
+                background-color: $white;
+                margin-bottom: 1rem;
+                img {
+                    width: 100%;
+                }
+            }
+            &__dot {
+                width: 1rem;
+                height: 1rem;
+                margin: 2rem 1rem 2rem 1rem;
+                display: inline-block;
+                border-radius: 50%;
+                background-color: $baby_blue;
+            }
+            &__name {
+                // font-size: 2.5rem;
+            }
+            &__profession {
+                // font-size: 2rem;
+            }
+            &__footer {
+                background-color: $white;
+                width: 100%;
+                padding: .8rem;
+                margin-top: auto;
+
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 2.5rem;
+                    margin: 0 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        &.intro {
+            margin: 20rem 15rem;
+
+            @include breakpoint(laptop) {
+                margin: 10rem 15rem;
+            }
+            .content {
+                width: 60rem;
+               // text-align: center;
+            }
+            &__main-text {
+                font-size: 10rem;
+                font-weight: 600;
+               
+            }
+            &__sub-text {
+               display: block;
+               font-size: 1.6rem;
+               font-weight: 400;
+            }
+
+            &__links {
+               display: flex;
+                width: 100%;
+                margin: 2rem auto;
+               justify-content: start;
+            }
+
+            &__text {
+                margin-top: 6rem;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@mixin animate($name, $duration, $iteration, $direction, $timing-function) {
+    -webkit-animation-duration: $duration;
+    -moz-animation-duration: $duration;
+    -o-animation-duration: $duration;
+    animation-duration: $duration;
+    -webkit-animation-iteration-count: $iteration;
+    -moz-animation-iteration-count: $iteration;
+    -o-animation-iteration-count: $iteration;
+    animation-iteration-count: $iteration;
+    -webkit-animation-name: $name;
+    -moz-animation-name: $name;
+    -o-animation-name: $name;
+    animation-name: $name;
+    -webkit-animation-direction: $direction;
+    -moz-animation-direction: $direction;
+    -o-animation-direction: $direction;
+    animation-direction: $direction;
+    -webkit-animation-timing-function: $timing-function;
+    -moz-animation-timing-function: $timing-function;
+    -o-animationanimation-timing-function: $timing-function;
+    animation-timing-function: $timing-function;
+}
+
+@mixin breakpoint($device) {
+    @if $device == desktop {
+        @media screen and (max-width: 1440px) {
+            @content;
+        }
+    }
+
+    @if $device == laptop {
+        @media screen and (max-width: 1280px) {
+            @content;
+        }
+    }
+
+    @if $device == mini_laptop {
+        @media screen and (max-width: 1140px) {
+            @content;
+        }
+    }
+
+    @if $device == tab_landscape {
+        @media screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if $device == tab_portrait {
+        @media screen and (max-width: 900px) {
+            @content;
+        }
+    }
+
+    // @if $device == tab_portrait {
+    //     @media screen and (max-width: 700px) {
+    //         @content;
+    //     }
+    // }
+
+    @if $device == phone {
+        @media screen and (max-width: 480px) {
+            @content;
+        }
+    }
+    @if $device == s_phone {
+        @media screen and (max-width: 320px) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include breakpoint(laptop) {font-size: 60%;}
+    @include breakpoint(mini_laptop) {font-size: 58%;}
+    @include breakpoint(tab_portrait) {font-size: 58%;}
+    @include breakpoint(phone) {font-size: 58%;}
+}
+
+body {
+    background: $almost_white;
+}
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
