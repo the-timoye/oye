@@ -8,20 +8,21 @@
     transition: all .3s ease-in-out;
 
     &-primary {
-
+        background: $black;
         color: $light_green;
-        background: $green;
         &:hover {        
             background: $beige;
-            color: $green;
+            color: $black;
         }
+
+
     }
     &-secondary {
+        color: $black;
         background: $light_green;
-        color: $green;
         &:hover {        
             background: $beige;
-            
+            color: $black;
         }
     }
 }

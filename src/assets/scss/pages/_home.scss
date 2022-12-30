@@ -7,9 +7,10 @@
     .side_deco {
         width: 40%;
         height: 100vh;
-        background-color: $green;
+        background-color: $black;
     }
     &__profile{
+        
         &-card {
             position: absolute;
             top: 20%;
@@ -21,7 +22,13 @@
             padding-top: 2rem;
             height: 50rem;
             width: 40rem;
-            background-color: $beige;
+            background-color: #1b1b1b;
+            color: $light_green;
+            transition: all .3s ease;
+
+            &:hover {
+                color: $beige;
+            }
             
 
             box-shadow: 1px 1px 5px 1px #00000021;
