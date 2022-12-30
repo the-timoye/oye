@@ -21,6 +21,10 @@
     animation-timing-function: $timing-function;
 }
 
+@mixin border-radius($size) {
+    border-radius: $size;
+}
+
 @mixin breakpoint($device) {
     @if $device == desktop {
         @media screen and (max-width: 1440px) {

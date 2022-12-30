@@ -8,6 +8,10 @@ body {
     line-height: 1.5;
     letter-spacing: 1px;
     color: $black;
+
+    .resume {
+       // background-color: $black;
+    }
 }
 
 h1 {font-size: 2rem;}
@@ -25,8 +29,8 @@ a {
 }
 
 a.link { 
-    color: $beige_faded;
-    border-bottom: 1px solid $beige_faded;
+    color: $beige;
+    border-bottom: 1px solid $beige;
     transition: all .4s ease-in-out;
     padding: .2rem;
 
@@ -37,5 +41,90 @@ a.link {
 }
 
 
+ul {
+    list-style-type: none;
+}
 
-// h6 {font-size: 1.6rem;}
+
+
+hr{
+  
+    border: 0;
+    height: 1px;
+    width: 10%;
+    position: relative;
+    margin: 30px auto;
+    
+    
+    &.center-ball{
+      background: $beige;
+      
+      &:before{
+        content: "";
+        width: 6px;
+        height: 6px;
+        background: $black;
+        display: inline-block;
+        border: 2px solid $beige;
+        @include border-radius(50%);
+        position: absolute;
+        top: -4px;
+        left: 50%;
+        margin: 0 0 0 -3px;
+      }
+    }
+    
+    &.center-diamond{
+      background: $beige;
+      
+      &:before{
+        content: "";
+        width: 6px;
+        height: 6px;
+        background: $beige;
+        display: inline-block;
+        border: 2px solid $beige;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        margin: 0 0 0 -3px;
+        transform:rotate(45deg);
+        -ms-transform:rotate(45deg); /* IE 9 */
+        -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+      }
+    }
+    
+    &.center-square{
+      background: $beige;
+      
+      &:before{
+        content: "";
+        width: 6px;
+        height: 6px;
+        background: $beige;
+        display: inline-block;
+        border: 2px solid $beige;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        margin: 0 0 0 -3px;
+      }
+    }
+    
+    &.center-star{
+      background: $beige;
+      
+      &:before{
+        content: "★";
+        color: $beige;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        margin: 0 0 0 -3px;
+        font-size: 15px;
+        line-height: 0;
+        text-shadow: 0 0 3px lighten($black, 5%);
+      }
+    }
+  }

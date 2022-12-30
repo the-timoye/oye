@@ -1,7 +1,6 @@
-import user from '../assets/images/svgs/user.svg'
+import {Link} from 'react-router-dom';
 
-// import database from '../assets/images/svgs/database.svg'
-
+import user from '../assets/images/svgs/user.svg';
 import ig from '../assets/images/svgs/ig.svg'
 import book from '../assets/images/svgs/book.svg'
 import github from '../assets/images/svgs/github.svg'
@@ -36,7 +35,7 @@ const Home = () => {
                 </span>
 
                     <div className="home__profile intro__links">
-                        <a className="btn btn-primary" href='#'>Button A</a>
+                        <a className="btn btn-primary" href='/resume'>Button A</a>
                         <a className="btn btn-secondary" href='#'>Button B</a>
                     </div>
 
