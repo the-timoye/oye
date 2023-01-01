@@ -1,16 +1,21 @@
 .bg-dark {
-   // background-color: $light_green;
-    padding: 10rem 35rem;
+   background-color: $off_white;
+   // padding: 10rem 35rem;
+
+    @include breakpoint(desktop) {
+     // padding: 10rem 5rem;
+    }
 }
 .resume {
 
-    padding: 2rem 5rem;
-    box-shadow: 1px 1px 5px 1px #00000021;
+    margin: 2rem 15rem;
+    padding: 2rem 0;
     background-color: $white;
+    border: 2px solid $beige;
 
     &__heading {
         text-align: center;
-         border-bottom: 1px solid $beige;
+         border-bottom: 2px solid $beige;
          padding: 0 0 2rem 0;
         &-profile {
             &.dot {
@@ -33,19 +38,31 @@
         }
     }
 
+    &__content  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__experience {
+        flex: 0 0 60%;
+    }
+     &__skills {
+        flex: 0 0 38%;
+        background-color: $light_green;
+    }
+
     section {
-        margin: 5rem 0;
+        margin: 2rem 0;
         padding: 1rem;
     }
 
     &__body {
         margin: 2rem 0;
-        &.profession {
-           // background-color: $off_white;
-        }
 
         &-title {
             font-size: 2rem;
+            border-bottom: 1px solid $beige;
         }
         &-item {
             padding: 2rem 0 0 0;
@@ -66,8 +83,6 @@
             }
 
             &__card {
-                // padding: 0 2rem 2rem 2rem;
-                // box-shadow: 1px 1px 5px 1px #00000021;
                 &-list {
                     &.dot {
                         display: inline-block;

@@ -16,9 +16,7 @@ const Home = () => {
                     <img src={user} alt='avatar' />
                 </div>
                 <h1 className="home__profile-card__name">Timi Oluyinka</h1>
-                {/* <div>
-                <div className='home__profile-card__dot' /> 
-                </div> */}
+                <hr className="center-diamond" />
                 <span className="home__profile-card__profession"> Data Engineer</span>
                 <div className='home__profile-card__footer'>
                 <img src={linkedin} alt='avatar' />
