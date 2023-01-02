@@ -1,9 +1,13 @@
 import React from 'react';
+import { Nav } from '../layouts/nav';
 
 
 const Resume = () => {
     return (
-        <div className='bg-dark'>
+        <>
+        <Nav />
+        {/* <div className='bg-dark'>/ */}
+
             <div className='resume'>
                 <div className='resume__heading'>
                     <p className='resume__heading-profile__name'>Cleveland Brown</p>
@@ -171,7 +175,8 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
+        </>
     )
 }
 

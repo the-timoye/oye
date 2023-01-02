@@ -1,0 +1,39 @@
+div.nav {
+    margin-bottom: 10rem;
+    color: $black;
+    nav {
+        display: flex ;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        padding: 2rem 1rem;
+        
+        box-shadow: 0 -1px 5px 1px #00000021;
+        background-color: $white;
+
+        
+
+        ul {
+            width: fit-content;
+            display: inline-block;
+            margin-left: auto;
+            transition: all .5s ease-in-out;
+            li {
+                display: inline;
+                margin-right: 1rem;
+                text-transform: lowercase;
+               
+                a.nav_link{                    
+                    padding: .5rem;
+                    color: $black;
+                    &:hover {
+                        // border-bottom: 1px solid $light_green;
+                        color: $light_green;
+                    }
+    
+                }
+            }
+        }
+    }
+}

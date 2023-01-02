@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    @media print { body { display:none } }
 
     @include breakpoint(laptop) {font-size: 60%;}
     @include breakpoint(mini_laptop) {font-size: 58%;}

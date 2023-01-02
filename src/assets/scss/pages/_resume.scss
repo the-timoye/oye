@@ -11,7 +11,7 @@
     margin: 2rem 15rem;
     padding: 2rem 0;
     background-color: $white;
-    border: 2px solid $beige;
+    // border: 2px solid $beige;
 
     &__heading {
         text-align: center;
@@ -49,12 +49,13 @@
     }
      &__skills {
         flex: 0 0 38%;
-        background-color: $light_green;
+      //  background-color: $beige;
     }
 
     section {
         margin: 2rem 0;
         padding: 1rem;
+        // background-color: $beige_faded;
     }
 
     &__body {
