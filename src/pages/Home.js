@@ -28,13 +28,13 @@ const Home = () => {
             </div>
             <div className="home__profile intro">
                 <div className="content">
-                <span className="home__profile intro__main-text">Hello
+                <span className="home__profile intro__main-text">hello
                     <small className="home__profile intro__sub-text">I am not your friend</small>
                 </span>
 
                     <div className="home__profile intro__links">
-                        <a className="btn btn-primary" href='/resume'>Button A</a>
-                        <a className="btn btn-secondary" href='#'>Button B</a>
+                        <a className="btn btn-primary" href='/about'>about</a>
+                        <a className="btn btn-secondary" href='/resume'>resume</a>
                     </div>
 
                     <p className="home__profile intro__text">
