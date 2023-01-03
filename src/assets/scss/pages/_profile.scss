@@ -1,0 +1,65 @@
+.profile {
+    background-repeat: repeat;
+    &__title {
+        text-align: center;
+    }
+
+    &__body {
+
+        padding: 2rem 0 4rem 0;
+
+        &-img {
+            margin: 3rem auto -7rem auto;
+
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            border: 1px solid $black;
+            background-color: $black;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-text {
+        // , &-social-links {
+            background-color: $black;
+            color: $almost_white;
+            width: 80rem;
+
+            @include breakpoint(desktop) {
+                // width: 70rem;
+            }
+        }
+
+        &-text {
+            
+            margin: 0 auto;
+            padding: 8rem 2rem 2rem 2rem;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px 1px #00000021;
+        }
+
+        &-social-links {
+            display: flex;
+            justify-content: end;
+            margin: 0 auto;
+            margin-top: 2rem;
+    
+            padding: 1rem;
+            box-shadow: 1px 1px 5px 1px #00000021;
+    
+            img {
+                width: 2rem;
+                margin-right: 2rem;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+
+
+
+}
