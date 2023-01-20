@@ -6,6 +6,7 @@ import book from '../assets/images/svgs/book.svg'
 import github from '../assets/images/svgs/github.svg'
 import linkedin from '../assets/images/svgs/linkedin.svg'
 import medium from '../assets/images/svgs/medium.svg'
+import { description, fullName, profession, technicalSkills, bio } from '../database/home';
 
 const Home = () => {
     return (
@@ -15,21 +16,25 @@ const Home = () => {
                 <div className="home__profile-card__avatar">
                     <img src={user} alt='avatar' />
                 </div>
-                <h1 className="home__profile-card__name">Timi Oluyinka</h1>
+                <h1 className="home__profile-card__name"> {fullName} </h1>
+                
+                
+                <span className="home__profile-card__profession"> {profession} </span>
                 <hr className="center-diamond" />
-                <span className="home__profile-card__profession"> Data Engineer</span>
+
+                <span className="home__profile-card__profession"> {technicalSkills} </span>
                 <div className='home__profile-card__footer'>
-                <img src={linkedin} alt='avatar' />
-                <img src={medium} alt='avatar' />
-                <img src={github} alt='avatar' />
-                <img src={ig} alt='avatar' />
-                <img src={book} alt='avatar' />
+                <a href = 'https://linkedin.com/in/oluwatimilehin-oluyinka' target={'_blank'} rel='no-referer' ><img src={linkedin} alt='avatar' /></a>
+                <a href='https://medium.com/thetimoye'><img src={medium} alt='avatar' /></a>
+                <a href='https://github.com/the-timoye'><img src={github} alt='github' /></a>
+                <a href='https://instagram.com/thetimoye'><img src={ig} alt='instagram' /></a>
+                <a href='https://buymeacooffee.com/thetimoye' title='buy me a book'><img src={book} alt='buymeabook' /></a>
                 </div>
             </div>
             <div className="home__profile intro">
                 <div className="content">
-                <span className="home__profile intro__main-text">hello
-                    <small className="home__profile intro__sub-text">I am not your friend</small>
+                <span className="home__profile intro__main-text">Hello
+                    <small className="home__profile intro__sub-text">{bio}</small>
                 </span>
 
                     <div className="home__profile intro__links">
@@ -38,8 +43,7 @@ const Home = () => {
                     </div>
 
                     <p className="home__profile intro__text">
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-                    <br /> I’m a great place for you to tell a story and let your users know a little more about you.
+                        {description}
                     </p>
                 </div>
 

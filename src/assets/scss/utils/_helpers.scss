@@ -1,8 +1,30 @@
 .color-green {
     color: $light_green;
 }
+.font-extra-light {
+    font-weight: 100;
+}
+.font-light {
+    font-weight: 200;
+}
+.font-semi-light {
+    font-weight: 300;
+}
+.font-normal {
+    font-weight: 400;
+}
+.font-semi-bold {
+    font-weight: 500;
+}
 .font-bold {
     font-weight: 600;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: $beige;
+    
+
 }
 
 .dot {
@@ -32,4 +54,14 @@
         margin-right: 2rem;
     }
     
+}
+
+.ml {
+    margin-left: 2rem;
+}
+.mr {
+    margin-right: 2rem;
+}
+.m-auto {
+    margin: auto;
 }
